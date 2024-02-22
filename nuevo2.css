@@ -1,0 +1,47 @@
+/* Estilos para la página de Historial Laboral */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Cambia este color según tus preferencias */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007BFF;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.dates {
+    font-style: italic;
+}
+
+.volver {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.volver:hover {
+    background-color: #0056b3;
+}

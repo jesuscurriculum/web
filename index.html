@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Curriculum</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Jesús González</h1>
+        <p>Aquí encontrarás información sobre mi experiencia y habilidades</p>
+    </header>
+	
+	 <nav>
+        <!-- <a href="#">Inicio</a> -->
+        <a id="formacion" href="formacion.html">formación</a>
+        <a id="nuevo1" href="nuevo1.html">historial Laboral</a>
+        <a id="nuevo3" href="nuevo3.html">Competencias Profesionales</a>
+		<a id="descargar" href="https://mega.nz/file/gIxEBKiT#L1uhfU3RaBmO7hzNfLRIFyWlO2HjmbVMeyqwJATsqK0" download="Curriculum.pdf">Download Currículum</a>
+    </nav>
+    
+    <div id="enlaces">
+        <!-- Contenido del enlace1.html -->
+    </div>
+	
+	<footer>
+        <div class="info">
+            <p>Contacto: <a href="mailto:tuemail@example.com">xesusgv@gmail.com</a></p>
+        </div>
+    </footer>
+	
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var descargarBtn = document.getElementById("descargar");
+
+    function alternarEstilos() {
+        // Cambia de tamaño y aplica estilos de animación
+        descargarBtn.style.transition = "transform 0.5s ease, color 0.5s ease";
+        descargarBtn.style.transform = "scale(1.1)";
+        descargarBtn.style.color = "#FFD700";  // Color brillante
+
+        // Después de 1 segundo, restaura el tamaño y los estilos originales
+        setTimeout(function() {
+            descargarBtn.style.transform = "scale(1)";
+            descargarBtn.style.color = "#fff";  // Color original
+        }, 1000);
+    }
+
+    // Repite la animación cada 2 segundos
+    setInterval(alternarEstilos, 2000);
+});
+</script>
+
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

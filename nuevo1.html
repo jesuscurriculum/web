@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Laboral</title>
+    <link rel="stylesheet" href="nuevo2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HISTORIAL LABORAL</h1>
+
+        <div class="job">
+            <p class="company">RALOTRANS, S.L</p>
+            <p>Gestión de reparto y rutas - Pontevedra, Galicia</p>
+            <p>Atención y servicio al cliente.</p>
+            <p class="dates">03/2023 - 03/2023</p>
+        </div>
+
+        <div class="job">
+            <p class="company">FROIZ, S.A.</p>
+            <p>Gestión de reparto y rutas - Pontevedra, Galicia</p>
+            <p>Venta al cliente ofreciendo un servicio de calidad.</p>
+            <p class="dates">10/2008 - 03/2015</p>
+        </div>
+
+        <div class="job">
+            <p class="company">VIDISCO SL</p>
+            <p>Gestión de reparto y rutas - Pontevedra, Galicia</p>
+            <p>Uso de sistemas informáticos y tecnológicos.</p>
+            <p>Colaboración con los diferentes departamentos de la empresa.</p>
+            <p class="dates">04/2005 - 09/2007</p>
+        </div>
+
+        <div class="job">
+            <p class="company">VIPER DECORACION SL</p>
+            <p>Pladur y pintura - Pontevedra, Galicia</p>
+            <p>Diseño y planificación de espacios interiores y exteriores según las necesidades.</p>
+            <p class="dates">05/2003 - 06/2004</p>
+        </div>
+
+        <a class="volver" href="index.html">Volver al Currículum</a>
+    </div>
+	
+			<script>
+        // JavaScript para la animación de desplazamiento y parpadeo de fechas
+        const animateDates = () => {
+            const dates = document.querySelectorAll('.dates');
+
+            dates.forEach((date, index) => {
+                setTimeout(() => {
+                    date.style.transition = 'margin-left 0.5s, color 0.5s';
+                    date.style.marginLeft = '50%';
+                    date.style.color = '#007BFF';
+
+                    // Parpadeo dos veces
+                    setTimeout(() => {
+                        date.style.color = 'white';
+                    }, 500);
+                    setTimeout(() => {
+                        date.style.color = '#007BFF';
+                    }, 1000);
+
+                    // Se queda estática después de dos parpadeos
+                    setTimeout(() => {
+                        date.style.transition = 'none'; // Elimina la transición
+                        date.style.marginLeft = '50%';
+                        date.style.color = '#007BFF';
+                    }, 1500);
+                }, index * 900); // Ajusta el valor para cambiar la velocidad del desplazamiento
+            });
+        };
+
+        animateDates();
+    </script>
+	
+	
+	
+</body>
+</html>
