@@ -84,6 +84,70 @@ nav a:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Estilos para el nuevo botón de descargar apk currículum */
+#descarga-apk {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 123, 255, 0.8); /* Color azul */
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid rgba(0, 123, 255, 0.8); /* Borde azul */
+    border-radius: 5px;
+    position: relative; /* Hace que la posición de la bolita sea relativa a este botón */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones */
+}
+
+#descarga-apk:hover {
+    background-color: #fff; /* Cambia el color de fondo a blanco */
+    color: rgba(0, 123, 255, 0.8); /* Cambia el color del texto a azul */
+}
+
+/* Estilos para el borde brillante */
+@keyframes borderGlow {
+    0% {
+        border-color: rgba(255, 165, 0, 0.8); /* Color inicial naranja */
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.8); /* Sombra naranja */
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0); /* Transparencia */
+        box-shadow: none; /* Sin sombra */
+    }
+    100% {
+        border-color: rgba(255, 165, 0, 0.8); /* Color final naranja */
+        box-shadow: 0 0 30px rgba(255, 165, 0, 0.8); /* Sombra naranja más grande */
+    }
+}
+
+/* Aplicar animación al botón */
+#descarga-apk {
+    animation: borderGlow 2s ease infinite; /* Animación del borde brillante */
+}
+
+.bolita {
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Ajusta la posición de la bolita para que esté fuera del botón al principio */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.8); /* Mismo color azul que el botón */
+    animation: orbit 4s linear infinite; /* Agrega la animación para que la bolita circule */
+}
+
+/* Animación para hacer que la bolita circule alrededor del botón */
+@keyframes orbit {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); /* Posición inicial de la bolita */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); /* Posición final de la bolita */
+    }
+}
+
+
 #descargar:hover {
     background-color: #fff;
     color: #007BFF;
@@ -136,6 +200,20 @@ footer {
 
 .info a:hover {
     text-decoration: underline;
+}
+
+/* Estilos para los botones en el nav */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-top: 20px; /* Mover los botones un poco más abajo */
+}
+
+nav a {
+    margin-bottom: 15px; /* Espacio entre botones */
+    padding: 5px 10px; /* Espaciado interno de los botones */
+    font-size: 14px; /* Tamaño de fuente de los botones */
 }
 
   
