@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('portatil.jpg'); /* Cambia la ruta a tu imagen */
+    background-image: url('Neon.jpg'); /* Cambia la ruta a tu imagen */
     background-size: cover;
     background-position: below;
     color: #fff; /* Cambié el color del texto a blanco para que se vea mejor en la imagen de fondo */
