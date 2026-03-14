@@ -52,7 +52,8 @@ nav a:hover {
 }
 
 /* Estilos para los botones de Formación e Historial Laboral */
-#formacion, #nuevo1, #nuevo3 {
+/* HE AÑADIDO #web-reservas AQUÍ */
+#formacion, #nuevo1, #nuevo3, #web-reservas {
     display: inline-block;
     padding: 10px 20px;
     margin-right: 10px;
@@ -65,7 +66,8 @@ nav a:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }	
 
-#formacion:hover, #nuevo1:hover, #nuevo3:hover {
+/* HE AÑADIDO #web-reservas:hover AQUÍ */
+#formacion:hover, #nuevo1:hover, #nuevo3:hover, #web-reservas:hover {
     background-color: #fff;
     color: #007BFF;
 }
@@ -152,10 +154,8 @@ nav a:hover {
     background-color: #fff;
     color: #007BFF;
 }
-	
-	
-}
-    /* Estilos para los enlaces */
+
+/* Estilos para los enlaces */
 h2 {
     color: #000;
 }
