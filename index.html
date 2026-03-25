@@ -3,55 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesús Curriculum</title>
+    <title>Jesús González - Portfolio IT</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        /* FRASE SUPERIOR CENTRADA Y EN UNA LÍNEA */
+        .frase-header {
+            color: #ffffff;
+            font-size: 1.1em;
+            text-align: center;
+            white-space: nowrap; 
+            margin: 30px auto;
+            width: 100%;
+        }
+
+        /* RECUADRO BLANCO CENTRADO */
+        .contenedor-info {
+            display: block;
+            margin: 50px auto; /* Centra horizontalmente */
+            width: 90%;
+            max-width: 550px; /* Ancho ideal para que se vea profesional */
+            padding: 25px; 
+            border-radius: 12px; 
+            background-color: rgba(255, 255, 255, 0.95); 
+            color: #24292e; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            line-height: 1.6;
+            position: relative; /* Para que no dependa de otros elementos */
+            z-index: 10;
+        }
+
+        .proyecto-item {
+            margin-bottom: 12px; 
+            padding-left: 15px; 
+            border-left: 4px solid #0366d6;
+        }
+
+        /* BOTONES FIJOS A LA IZQUIERDA */
+        nav {
+            display: flex;
+            flex-direction: column;
+            position: fixed; /* Los anclamos para que el cuadro central no los mueva */
+            left: 30px; 
+            top: 200px; 
+            gap: 12px;
+            z-index: 20;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 18px;
+            background: #0366d6;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: bold;
+            transition: background 0.3s;
+            width: 160px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: #024ea3;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Jesús González</h1>
-        <p><strong>El Bitcoding es el motor que permite a las pymes optimizar sus procesos y proteger su activo más valioso: la información. Mediante el desarrollo de código preciso, transformamos la vulnerabilidad en soluciones tecnológicas robustas y eficientes.</strong></p>
+
+    <header style="text-align: center; padding-top: 40px;">
+        <h1 style="margin-bottom: 10px;">Jesús González</h1>
+        <p class="frase-header">
+            <strong>Desarrollador de Soluciones Digitales. Transformo desafíos técnicos en herramientas funcionales para escalar tu negocio.</strong>
+        </p>
     </header>
 
-    <div style="padding: 15px 25px; max-width: 850px; margin: 20px auto; border-left: 4px solid #0366d6; background-color: #f6f8fa; color: #24292e;">
-        <p><em>Mi proyecto <strong>Secure Box</strong> nació precisamente de la aplicación del Bitcoding para resolver una necesidad crítica: ayudar a personas que necesitaban transferir información sensible por internet con la total seguridad de que los datos viajaran encriptados. El objetivo era garantizar que, incluso en caso de un hackeo, nadie pudiera ver el contenido, permitiendo que la información fuera totalmente privada y segura. Así nació Secure Box.</em></p>
+    <div class="contenedor-info">
+        <p style="margin-bottom: 15px; font-size: 1em;">
+            <strong>Bienvenido a mi ecosistema de innovación tecnológica.</strong> Aquí desarrollo soluciones de alto impacto listas para integrarse en entornos profesionales:
+        </p>
+
+        <div class="proyecto-item">
+            <strong>Secure Box:</strong> Transferencia de datos con cifrado de grado profesional.
+        </div>
+        <div class="proyecto-item">
+            <strong>Web Reservas:</strong> Gestión ágil de clientes y activos en tiempo real.
+        </div>
+
+        <p style="margin-top: 20px; font-style: italic; font-size: 0.9em; color: #444;">
+            Cada proyecto demuestra mi capacidad para crear software robusto, escalable y adaptado a las necesidades del sector IT. 
+            <span style="color: #0366d6; font-weight: bold; font-style: normal; display: block; margin-top: 10px;">
+                ¿Necesitas una solución a medida? Hablemos.
+            </span>
+        </p>
     </div>
 
     <nav>
-        <a id="formacion" href="formacion.html">formación</a>
-        <a id="nuevo1" href="nuevo1.html">historial Laboral</a>
-        <!-- Botón modificado con el ID correcto -->
+        <a id="formacion" href="formacion.html">Formación</a>
+        <a id="nuevo1" href="nuevo1.html">Historial Laboral</a>
         <a id="web-reservas" href="https://jesuscurriculum.github.io/la-mesa-dorada/" target="_blank">Web Reservas</a>
-        <a id="descargar" href="CV_Jesus_Gonzalez.pdf" download="CV_Jesus_Gonzalez.pdf">Descargar Currículum 2026</a>
-        <a id="descarga-apk" href="https://xesusproyet.github.io/secure-box/" target="_blank">Ver App Secure Box<span class="bolita"></span></a>
+        <a id="descargar" href="CV_Jesus_Gonzalez.pdf" download>Descargar CV 2026</a>
+        <a id="descarga-apk" href="https://xesusproyet.github.io/secure-box/" target="_blank">Ver App Secure Box</a>
     </nav>
     
-    <div id="enlaces">
-        </div>
-    
     <footer>
-        <div class="info">
-            <p>Contacto: <a href="mailto:xesusvg@gmail.com">xesusvg@gmail.com</a></p>
-        </div>
+        <p>Contacto: <a href="mailto:xesusvg@gmail.com" style="color: #58a6ff; text-decoration: none;">xesusvg@gmail.com</a></p>
     </footer>
-    
+
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var descargarBtn = document.getElementById("descargar");
-
-        function alternarEstilos() {
-            descargarBtn.style.transition = "transform 0.5s ease, color 0.5s ease";
-            descargarBtn.style.transform = "scale(1.1)";
-            descargarBtn.style.color = "#FFD700"; 
-
-            setTimeout(function() {
-                descargarBtn.style.transform = "scale(1)";
-                descargarBtn.style.color = "#fff"; 
-            }, 1000);
-        }
-
-        setInterval(alternarEstilos, 2000);
-    });
+        document.addEventListener("DOMContentLoaded", function() {
+            var descargarBtn = document.getElementById("descargar");
+            setInterval(function() {
+                descargarBtn.style.transition = "transform 0.5s ease, color 0.5s ease";
+                descargarBtn.style.transform = "scale(1.05)";
+                descargarBtn.style.color = "#FFD700"; 
+                setTimeout(function() {
+                    descargarBtn.style.transform = "scale(1)";
+                    descargarBtn.style.color = "#fff"; 
+                }, 1000);
+            }, 2000);
+        });
     </script>
+
 </body>
 </html>
 
