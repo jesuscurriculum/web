@@ -29,14 +29,14 @@
             display: block;
             margin: 50px auto; /* Centra horizontalmente */
             width: 90%;
-            max-width: 550px; /* Ancho ideal para que se vea profesional */
+            max-width: 550px; 
             padding: 25px; 
             border-radius: 12px; 
             background-color: rgba(255, 255, 255, 0.95); 
             color: #24292e; 
             box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
             line-height: 1.6;
-            position: relative; /* Para que no dependa de otros elementos */
+            position: relative;
             z-index: 10;
         }
 
@@ -46,11 +46,11 @@
             border-left: 4px solid #0366d6;
         }
 
-        /* BOTONES FIJOS A LA IZQUIERDA */
+        /* BOTONES FIJOS A LA IZQUIERDA (POR DEFECTO PC) */
         nav {
             display: flex;
             flex-direction: column;
-            position: fixed; /* Los anclamos para que el cuadro central no los mueva */
+            position: fixed;
             left: 30px; 
             top: 200px; 
             gap: 12px;
@@ -68,6 +68,7 @@
             transition: background 0.3s;
             width: 160px;
             text-align: center;
+            box-sizing: border-box;
         }
 
         nav a:hover {
@@ -80,12 +81,70 @@
             width: 100%;
             text-align: center;
         }
+
+        /* ==========================================
+           ESTILOS RESPONSIVE PARA MÓVILES
+           ========================================== */
+        @media (max-width: 768px) {
+            
+            /* 1. AJUSTE DE LOS BOTONES (IZQUIERDA) */
+            nav {
+                left: 5px;         /* Pegamos más a la izquierda */
+                top: 100px;        /* Subimos un poco los botones */
+                width: 130px;      /* Ancho fijo para la columna de botones */
+                gap: 8px;          /* Menos espacio entre botones */
+            }
+
+            nav a {
+                width: 100%;       /* Ocupan todo el ancho del contenedor nav */
+                padding: 10px 5px; /* Padding ajustado */
+                font-size: 0.7em;  /* Texto más pequeño para que quepa */
+            }
+
+            /* 2. AJUSTE DEL CONTENIDO (DESPAZADO A LA DERECHA) */
+            header {
+                margin-left: 140px; /* Empujamos todo el bloque derecho */
+                padding-right: 10px;
+                text-align: left;   /* Alineamos a la izquierda para mejor lectura en columna estrecha */
+            }
+            
+            header h1 {
+                font-size: 1.5em;
+                margin-bottom: 5px;
+            }
+
+            .frase-header {
+                white-space: normal; /* Permitimos saltos de línea */
+                text-align: left;
+                font-size: 0.9em;
+                margin: 10px 0;
+            }
+
+            .contenedor-info {
+                margin-left: 140px;  /* Empujamos el cuadro blanco a la derecha */
+                margin-right: 10px;  /* Margen derecho para no salirse */
+                width: auto;         /* Se adapta al espacio restante */
+                max-width: none;
+                padding: 15px;       /* Reducimos padding interno */
+                font-size: 0.9em;
+            }
+
+            /* 3. AJUSTE DEL FOOTER */
+            footer {
+                position: relative; /* Dejamos de fijarlo para que no moleste */
+                margin-top: 40px;
+                margin-left: 140px;  /* Alineado con el contenido */
+                text-align: left;
+                width: auto;
+                padding-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <header style="text-align: center; padding-top: 40px;">
-        <h1 style="margin-bottom: 10px;">Jesús González</h1>
+    <header>
+        <h1>Jesús González</h1>
         <p class="frase-header">
             <strong>Desarrollador de Soluciones Digitales. Transformo desafíos técnicos en herramientas funcionales para escalar tu negocio.</strong>
         </p>
